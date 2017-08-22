@@ -1,6 +1,7 @@
-from sys import happy
+from sys import argv
 
-script, first, second, third = happy
+
+script, first, second, third = argv
 
 name = raw_input("What is your name?")
 age = raw_input("Waht is your age?")

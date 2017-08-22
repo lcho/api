@@ -9,7 +9,7 @@ print "If you do want that, hit RETURN."
 raw_input("?")
 
 print "Opening the file..."
-target = open(filename,'w')
+target = open(filename, "a")
 
 print "Truncating the file. Goodbye!"
 #target.truncate()
@@ -30,4 +30,7 @@ target.write(line3)
 target.write("\n")
 
 print "and finally, we close it."
-#target.close()
+target.close()
+
+target = open(filename)
+print target.read()
